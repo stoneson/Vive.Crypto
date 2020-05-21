@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.1.1</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>WondersGroup</Authors>
+    <Description>
+      Vive.Crypto是Vive应用框架的加密操作类库。
+      对各种常用的加密算法进行封装，Base64、对称密码（DES、3DES、AES、SM4）、非对称密码（RSA、SM2）、Hash(MD5、HMAC、HMAC-MD5、HMAC-SHA1、HMAC-SHA256、HMAC-SHA384、HMAC-SHA512、SHA、SHA1、SHA256、SHA384、SHA512、SM3)等实现。
+    </Description>
+    <Title>$(AssemblyName)</Title>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath></OutputPath>
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath></OutputPath>
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="ChinaEncrypt\**" />
+    <EmbeddedResource Remove="SMCrypto\SMJAVA\**" />
+    <EmbeddedResource Remove="SMCrypto\SMJS\**" />
+    <None Remove="SMCrypto\SMJAVA\**" />
+    <None Remove="SMCrypto\SMJS\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="SMCrypto\GeneralDigest.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BouncyCastle.NetCoreSdk" Version="1.9.3.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+</Project>
