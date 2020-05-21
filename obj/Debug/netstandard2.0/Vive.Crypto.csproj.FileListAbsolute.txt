@@ -1,0 +1,9 @@
+D:\github\Vive.Crypto\bin\Debug\netstandard2.0\Vive.Crypto.deps.json
+D:\github\Vive.Crypto\bin\Debug\netstandard2.0\Vive.Crypto.dll
+D:\github\Vive.Crypto\bin\Debug\netstandard2.0\Vive.Crypto.pdb
+D:\github\Vive.Crypto\obj\Debug\netstandard2.0\Vive.Crypto.csprojAssemblyReference.cache
+D:\github\Vive.Crypto\obj\Debug\netstandard2.0\Vive.Crypto.AssemblyInfoInputs.cache
+D:\github\Vive.Crypto\obj\Debug\netstandard2.0\Vive.Crypto.AssemblyInfo.cs
+D:\github\Vive.Crypto\obj\Debug\netstandard2.0\Vive.Crypto.csproj.CoreCompileInputs.cache
+D:\github\Vive.Crypto\obj\Debug\netstandard2.0\Vive.Crypto.dll
+D:\github\Vive.Crypto\obj\Debug\netstandard2.0\Vive.Crypto.pdb

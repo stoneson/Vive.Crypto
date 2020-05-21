@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d556468e-da15-462c-b403-95304bed9b8c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="214" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YLXJfByJmbz5Dc7cRPOs75Fvx7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$/jars" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/cn/xjfme/encrypt/utils/sm4" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="main.java.cn.xjfme.encrypt.utils.sm4" />
+      <recent name="main.java.cn.xjfme.encrypt.utils.sm2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\fugle5\fts\HISs\51接口规范\源代码\仁济接口\Fugle.YBHISWcfAPI\ChinaEncrypt\SM2_SM3_SM4Encrypt\src\main\java\cn\xjfme\encrypt\utils\sm4" />
+      <recent name="D:\fugle5\fts\HISs\51接口规范\源代码\仁济接口\Fugle.YBHISWcfAPI\ChinaEncrypt\SM2_SM3_SM4Encrypt\src\main\java\cn\xjfme\encrypt\utils" />
+      <recent name="D:\fugle5\fts\HISs\51接口规范\源代码\仁济接口\Fugle.YBHISWcfAPI\ChinaEncrypt\SM2_SM3_SM4Encrypt\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SecurityTestAll">
+    <configuration name="SM2_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.cn.xjfme.encrypt.utils.sm2.SM2_1" />
+      <module name="SM2_SM3_SM4Encrypt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.cn.xjfme.encrypt.utils.sm2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SM3Digest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.cn.xjfme.encrypt.utils.sm3.SM3Digest" />
+      <module name="SM2_SM3_SM4Encrypt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.cn.xjfme.encrypt.utils.sm3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SM3_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.cn.xjfme.encrypt.utils.sm3.SM3_1" />
+      <module name="SM2_SM3_SM4Encrypt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.cn.xjfme.encrypt.utils.sm3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityTestAll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.cn.xjfme.encrypt.test.SecurityTestAll" />
+      <module name="SM2_SM3_SM4Encrypt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.cn.xjfme.encrypt.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityTest.sm4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SM2_SM3_SM4Encrypt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.cn.xjfme.encrypt.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.java.cn.xjfme.encrypt.test" />
+      <option name="MAIN_CLASS_NAME" value="main.java.cn.xjfme.encrypt.test.SecurityTest" />
+      <option name="METHOD_NAME" value="sm4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SecurityTestAll" />
+        <item itemvalue="Application.SM3Digest" />
+        <item itemvalue="Application.SM2_1" />
+        <item itemvalue="Application.SM3_1" />
+        <item itemvalue="JUnit.SecurityTest.sm4" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d556468e-da15-462c-b403-95304bed9b8c" name="Default Changelist" comment="" />
+      <created>1582722777709</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582722777709</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="392" y="104" key="#HTTP_Proxy" timestamp="1582724506950">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="104" key="#HTTP_Proxy/0.0.1600.860@0.0.1600.860" timestamp="1582724506950" />
+    <state x="554" y="144" key="DetectedRootsChooserDialog" timestamp="1582734538904">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="554" y="144" key="DetectedRootsChooserDialog/0.0.1600.860@0.0.1600.860" timestamp="1582734538904" />
+    <state x="2180" y="184" key="FileChooserDialogImpl" timestamp="1589631779383">
+      <screen x="1600" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="184" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1583212454071" />
+    <state x="2180" y="184" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1589631779383" />
+    <state x="580" y="184" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1582734536030" />
+    <state width="1323" height="136" key="GridCell.Tab.0.bottom" timestamp="1589957283542">
+      <screen x="1600" y="0" width="1366" height="728" />
+    </state>
+    <state width="1206" height="276" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1583225936216" />
+    <state width="1237" height="273" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1582788504579" />
+    <state width="1323" height="136" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1589957283542" />
+    <state width="1557" height="540" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1589693489984" />
+    <state width="1227" height="271" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584762155019" />
+    <state width="1323" height="136" key="GridCell.Tab.0.center" timestamp="1589957283541">
+      <screen x="1600" y="0" width="1366" height="728" />
+    </state>
+    <state width="1206" height="276" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1583225936216" />
+    <state width="1237" height="273" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1582788504575" />
+    <state width="1323" height="136" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1589957283541" />
+    <state width="1557" height="540" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1589693489984" />
+    <state width="1227" height="271" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1584762155019" />
+    <state width="1323" height="136" key="GridCell.Tab.0.left" timestamp="1589957283541">
+      <screen x="1600" y="0" width="1366" height="728" />
+    </state>
+    <state width="1206" height="276" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1583225936215" />
+    <state width="1237" height="273" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1582788504574" />
+    <state width="1323" height="136" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1589957283541" />
+    <state width="1557" height="540" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1589693489983" />
+    <state width="1227" height="271" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1584762155019" />
+    <state width="1323" height="136" key="GridCell.Tab.0.right" timestamp="1589957283542">
+      <screen x="1600" y="0" width="1366" height="728" />
+    </state>
+    <state width="1206" height="276" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1583225936216" />
+    <state width="1237" height="273" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1582788504577" />
+    <state width="1323" height="136" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1589957283542" />
+    <state width="1557" height="540" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1589693489984" />
+    <state width="1227" height="271" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1584762155019" />
+    <state width="1206" height="276" key="GridCell.Tab.1.bottom" timestamp="1583225936216">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1206" height="276" key="GridCell.Tab.1.bottom/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1583225936216" />
+    <state width="1557" height="276" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1582735517218" />
+    <state width="1206" height="276" key="GridCell.Tab.1.center" timestamp="1583225936216">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1206" height="276" key="GridCell.Tab.1.center/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1583225936216" />
+    <state width="1557" height="276" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1582735517218" />
+    <state width="1206" height="276" key="GridCell.Tab.1.left" timestamp="1583225936216">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1206" height="276" key="GridCell.Tab.1.left/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1583225936216" />
+    <state width="1557" height="276" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1582735517218" />
+    <state width="1206" height="276" key="GridCell.Tab.1.right" timestamp="1583225936216">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1206" height="276" key="GridCell.Tab.1.right/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1583225936216" />
+    <state width="1557" height="276" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1582735517218" />
+    <state x="280" y="4" key="SettingsEditor" timestamp="1582772127274">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="280" y="4" key="SettingsEditor/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1582772127274" />
+    <state x="280" y="4" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1582734548875" />
+    <state x="2010" y="214" key="com.intellij.ide.util.TipDialog" timestamp="1589868019922">
+      <screen x="1600" y="0" width="1366" height="728" />
+    </state>
+    <state x="480" y="253" key="com.intellij.ide.util.TipDialog/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1582853969616" />
+    <state x="1984" y="289" key="com.intellij.ide.util.TipDialog/0.0.1600.860/1600.0.1280.984@1600.0.1280.984" timestamp="1583206519155" />
+    <state x="480" y="253" key="com.intellij.ide.util.TipDialog/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1583376281133" />
+    <state x="2010" y="214" key="com.intellij.ide.util.TipDialog/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1589868019922" />
+    <state x="480" y="253" key="com.intellij.ide.util.TipDialog/0.0.1600.860/1600.0.1600.860@0.0.1600.860" timestamp="1589677049552" />
+    <state x="2080" y="253" key="com.intellij.ide.util.TipDialog/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1589698912219" />
+    <state x="480" y="253" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1584762111845" />
+    <state x="498" y="323" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1582724829090">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="498" y="323" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1600.860@0.0.1600.860" timestamp="1582724829090" />
+    <state x="174" y="39" key="new project wizard" timestamp="1583376324156">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="174" y="39" key="new project wizard/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1583376324156" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1583214751418">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860/1600.0.1280.984@0.0.1600.860" timestamp="1583214751418" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SM2_SM3_SM4Encrypt$SecurityTestAll.ic" NAME="SecurityTestAll Coverage Results" MODIFIED="1582732429118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>main.java.cn.xjfme.encrypt.test.*</FILTER>
+    </SUITE>
+  </component>
+</project>
