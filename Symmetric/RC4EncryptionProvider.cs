@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Text;
-using Vive.Crypto.Abstractions;
 using Vive.Crypto.Core;
 using Vive.Crypto.Core.Internals.Extensions;
 
@@ -13,7 +12,7 @@ namespace Vive.Crypto
     /// RC4 加密提供程序
     /// 参考：https://bitlush.com/blog/rc4-encryption-in-c-sharp
     /// </summary>
-    internal class RC4EncryptionProvider : ISymmetricEncyption
+    internal class RC4EncryptionProvider 
     {
         /// <summary>
         /// 初始化一个<see cref="RC4EncryptionProvider"/>类型的实例

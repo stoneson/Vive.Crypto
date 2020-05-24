@@ -34,15 +34,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="CryptoTest\**" />
+    <Compile Remove="packages\**" />
     <EmbeddedResource Remove="ChinaEncrypt\**" />
+    <EmbeddedResource Remove="CryptoTest\**" />
+    <EmbeddedResource Remove="packages\**" />
     <EmbeddedResource Remove="SMCrypto\SMJAVA\**" />
     <EmbeddedResource Remove="SMCrypto\SMJS\**" />
+    <None Remove="CryptoTest\**" />
+    <None Remove="packages\**" />
     <None Remove="SMCrypto\SMJAVA\**" />
     <None Remove="SMCrypto\SMJS\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="SMCrypto\GeneralDigest.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="HCenter.Encryption.csproj.vspscc" />
+    <None Remove="README.md" />
   </ItemGroup>
 
   <ItemGroup>
