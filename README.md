@@ -113,3 +113,10 @@ Vive.Crypto是Vive应用框架的加密操作类库。 对各种常用的加密�
             return SymmetricProviderFactory.Create(providerType);
         }
     }
+
+国密算法参考：
+java:https://github.com/hyfree/SM2_SM3_SM4Encrypt/tree/5e7ec1b2604ae9471dc0baaafb45d07563576e9d
+JS:https://github.com/yazhouZhang/SM2-SM3-SM4-SM9
+C#:https://www.cnblogs.com/shenblogs/p/10346009.html
+其他加密参考：
+https://github.com/bing-framework/Bing.Encryption
