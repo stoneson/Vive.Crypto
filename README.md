@@ -1,4 +1,4 @@
-# Vive.Crypto
+# Vive.Crypto（https://github.com/stoneson/Vive.Crypto）
 Vive.Crypto是Vive应用框架的加密操作类库。 对各种常用的加密算法进行封装，Base64、对称密码（DES、3DES、AES、SM4）、非对称密码（RSA、SM2）、Hash(MD5、HMAC、HMAC-MD5、HMAC-SHA1、HMAC-SHA256、HMAC-SHA384、HMAC-SHA512、SHA、SHA1、SHA256、SHA384、SHA512、SM3)等实现。
 
 内含Java 和 js 的SM2,SM3,SM4 密码类，实现了C#、Java 和 JS 的SM2,SM3,SM4的相互加密解密
