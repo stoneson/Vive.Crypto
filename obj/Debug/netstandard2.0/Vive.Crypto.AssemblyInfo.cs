@@ -15,13 +15,13 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Vive")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("\n      Vive.Crypto是Vive应用框架的加密操作类库。\n      对各种常用的加密算法进行封装，Base64、对称密码（DES、3DES、AES" +
-    "、SM4）、非对称密码（RSA、SM2）、Hash(MD5、HMAC、HMAC-MD5、HMAC-SHA1、HMAC-SHA256、HMAC-SHA384、HM" +
-    "AC-SHA512、SHA、SHA1、SHA256、SHA384、SHA512、SM3)等实现。\n    ")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.1.1.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.1")]
+    "、SM4）、非对称密码（RSA、SM2）、Hash(MD4、MD5、HMAC、HMAC-MD5、HMAC-SHA1、HMAC-SHA256、HMAC-SHA38" +
+    "4、HMAC-SHA512、SHA、SHA1、SHA256、SHA384、SHA512、SM3)等实现。\n")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.1.2.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Vive.Crypto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vive.Crypto")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.1.1.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.1.2.0")]
 
 // 由 MSBuild WriteCodeFragment 类生成。
 
