@@ -1,7 +1,8 @@
 # Vive.Crypto（https://github.com/stoneson/Vive.Crypto）
 Vive.Crypto对各种常用的加密算法进行封装，有 Base64、对称加密（DES、3DES、AES、SM4）、非对称加密（RSA、SM2）、Hash(MD4、MD5、HMAC、HMAC-MD5、HMAC-SHA1、HMAC-SHA256、HMAC-SHA384、HMAC-SHA512、SHA、SHA1、SHA256、SHA384、SHA512、SM3)等实现。
 
-内含Java 和 js 的SM2,SM3,SM4 密码类，实现了C#、Java 和 JS 的SM2,SM3,SM4的相互加密解密
+内含Java（https://github.com/stoneson/Vive.Crypto/tree/master/SMCrypto/SMJAVA） 和 js（https://github.com/stoneson/Vive.Crypto/tree/master/SMCrypto/SMJS） 的SM2,SM3,SM4 密码类；
+实现了C#、Java 和 JS 的SM3,SM4的相互加密解密
 
 
 /// <summary>
