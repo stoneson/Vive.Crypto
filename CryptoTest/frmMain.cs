@@ -20,14 +20,24 @@ namespace CryptoTest
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            cmbEncryptType.SelectedIndexChanged += new System.EventHandler(this.cmbEncryptType_SelectedIndexChanged);
             cmbProviderType.SelectedIndexChanged += CmbProviderType_SelectedIndexChanged;
             cmbProviderType.SelectedIndex = 0;
-
             CmbProviderType_SelectedIndexChanged(sender, e);
 
-            this.cmbEncryptType.SelectedIndexChanged += new System.EventHandler(this.cmbEncryptType_SelectedIndexChanged);
         }
-
+        private void refreshData()
+        {
+            txtPost.Text = INIHelper.Read(cmbEncryptType.Text+"_PostData.dat");
+            txtSecretKey.Text = INIHelper.IniReadValue(cmbEncryptType.Text + "_txtSecretKey");
+            txtprivateKey.Text = INIHelper.IniReadValue(cmbEncryptType.Text + "_txtprivateKey");
+        }
+        private void saveData()
+        {
+            INIHelper.Write(cmbEncryptType.Text + "_PostData.dat", txtPost.Text);
+            INIHelper.IniWriteValue(cmbEncryptType.Text + "_txtSecretKey", txtSecretKey.Text);
+            INIHelper.IniWriteValue(cmbEncryptType.Text + "_txtprivateKey", txtprivateKey.Text);
+        }
         private void CmbProviderType_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbEncryptType.Items.Clear();
@@ -102,14 +112,18 @@ namespace CryptoTest
         {
             txtSecretKey.Enabled = true;
             txtprivateKey.Enabled = true;
+            btnGenerateKeyPair.Visible = true;
             if (cmbProviderType.Text == "对称加密")
             {
-                txtprivateKey.Enabled = (cmbEncryptType.Text.StartsWith("SM4") && cmbEncryptType.Text.Contains("CBC"))|| cmbEncryptType.Text.StartsWith("AES") || cmbEncryptType.Text.StartsWith("TripleDES");
+                txtprivateKey.Enabled = !(cmbEncryptType.Text.StartsWith("SM4") && cmbEncryptType.Text.Contains("ECB"));
             }
             else if (cmbProviderType.Text == "哈希加密")
             {
-                txtSecretKey.Enabled = txtprivateKey.Enabled = cmbEncryptType.Text.StartsWith("HMAC");
+                txtSecretKey.Enabled = cmbEncryptType.Text.StartsWith("HMAC");
+                txtprivateKey.Enabled = false;
+                btnGenerateKeyPair.Visible = txtSecretKey.Enabled;
             }
+            refreshData();
         }
         /// <summary>
         /// 加密
@@ -157,19 +171,14 @@ namespace CryptoTest
                     var symmetricProviderType = cmbEncryptType.Text.Split('-')[0];
                     var symmetricProvider = CryptoFactory.CreateSymmetric(symmetricProviderType);
                     response = symmetricProvider.Encrypt(plainText, txtSecretKey.Text, cmbEncryptType.Text.Contains("ECB") || txtprivateKey.Text.IsNullOrEmpty() ? null : txtprivateKey.Text);
-
-                    INIHelper.IniWriteValue("txtprivateKey", txtprivateKey.Text);
                 }
                 else //非对称加密
                 {
                     var asymmetricProviderType = cmbEncryptType.Text;
                     var asymmetricProvide = CryptoFactory.CreateAsymmetric(asymmetricProviderType);
                     response = asymmetricProvide.Encrypt(plainText, txtSecretKey.Text);
-
-                    INIHelper.IniWriteValue("txtprivateKey", txtprivateKey.Text);
                 }
-                INIHelper.IniWriteValue("txtSecretKey", txtSecretKey.Text);
-                INIHelper.Write("PostData.dat", txtPost.Text);
+                saveData();
             }
             catch (Exception ex) { txtResponse.Text = ex.ToString(); }
             return response;
@@ -211,29 +220,32 @@ namespace CryptoTest
                     var symmetricProvider = CryptoFactory.CreateSymmetric(symmetricProviderType);
 
                     var keypair = symmetricProvider.CreateKey();
-                    txtSecretKey.Text = keypair.Key;
-                    txtprivateKey.Text = keypair.IV;
 
-                    INIHelper.IniWriteValue("txtprivateKey", txtprivateKey.Text);
-                    INIHelper.IniWriteValue("txtSecretKey", txtSecretKey.Text);
+                    txtSecretKey.Text = keypair.Key;
+                    if (txtprivateKey.Enabled)
+                        txtprivateKey.Text = keypair.IV;
+                    else 
+                        txtprivateKey.Text = "";
                 }
                 else if (cmbProviderType.Text == "哈希加密")
                 {
-                    txtSecretKey.Text = Vive.Crypto.Core.Internals.RandomStringGenerator.Generate(32);
-
-                    INIHelper.IniWriteValue("txtSecretKey", txtSecretKey.Text);
+                    if (cmbEncryptType.Text.StartsWith("HMAC"))
+                        txtSecretKey.Text = Vive.Crypto.Core.Internals.RandomStringGenerator.Generate(32);
+                    else 
+                        txtSecretKey.Text = "";
+                    txtprivateKey.Text = "";
                 }
                 else //非对称加密
                 {
                     var asymmetricProviderType = cmbEncryptType.Text;
                     var asymmetricProvide = CryptoFactory.CreateAsymmetric(asymmetricProviderType);
                     var keypair = asymmetricProvide.CreateKey();
+
                     txtSecretKey.Text = keypair.PublickKey;
                     txtprivateKey.Text = keypair.PrivateKey;
-
-                    INIHelper.IniWriteValue("txtprivateKey", txtprivateKey.Text);
-                    INIHelper.IniWriteValue("txtSecretKey", txtSecretKey.Text);
                 }
+
+                saveData();
             }
             catch (Exception ex) { txtResponse.Text = ex.ToString(); }
             btnGenerateKeyPair.Enabled = true;
@@ -254,8 +266,6 @@ namespace CryptoTest
                     var hashingProviderType = cmbEncryptType.Text;
                     var hashingProvider = CryptoFactory.CreateHashing(hashingProviderType);
                     signData = hashingProvider.Signature(txtPost.Text, txtSecretKey.Text);
-
-                    INIHelper.IniWriteValue("txtSecretKey", txtSecretKey.Text);
                 }
                 else //非对称加密
                 {
@@ -263,15 +273,12 @@ namespace CryptoTest
                     var asymmetricProvide = CryptoFactory.CreateAsymmetric(asymmetricProviderType);
                     asymmetricProvide.OutType = Vive.Crypto.Core.OutType.Hex;
                     signData = asymmetricProvide.SignData(txtPost.Text, txtprivateKey.Text);
-
-                    INIHelper.IniWriteValue("txtprivateKey", txtprivateKey.Text);
-                    INIHelper.IniWriteValue("txtSecretKey", txtSecretKey.Text);
                 }
                 txtResponse.Text = signData;
                 //txtResponse.Text = "验名成功";
 
                 INIHelper.Write(cmbEncryptType.Text + "_SignData.dat", signData);
-
+                saveData();
             }
             catch (Exception ex) { txtResponse.Text = ex.ToString(); }
             btnSign.Enabled = true;
