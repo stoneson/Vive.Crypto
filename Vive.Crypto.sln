@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vive.Crypto", "Vive.Crypto.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoTest", "CryptoTest\CryptoTest.csproj", "{BDF39CC4-BB65-4A65-BF9A-4A0B3B3B83F6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoTest5.0", "CryptoTest5.0\CryptoTest5.0.csproj", "{E8A05A8D-B177-4215-AE60-55F7B704D93C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoTest4.0", "CryptoTest4.0\CryptoTest4.0.csproj", "{FF1C0D37-5F2B-4F14-B57C-A2D25FCCA214}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{BDF39CC4-BB65-4A65-BF9A-4A0B3B3B83F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDF39CC4-BB65-4A65-BF9A-4A0B3B3B83F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDF39CC4-BB65-4A65-BF9A-4A0B3B3B83F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8A05A8D-B177-4215-AE60-55F7B704D93C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8A05A8D-B177-4215-AE60-55F7B704D93C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8A05A8D-B177-4215-AE60-55F7B704D93C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8A05A8D-B177-4215-AE60-55F7B704D93C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF1C0D37-5F2B-4F14-B57C-A2D25FCCA214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF1C0D37-5F2B-4F14-B57C-A2D25FCCA214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF1C0D37-5F2B-4F14-B57C-A2D25FCCA214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF1C0D37-5F2B-4F14-B57C-A2D25FCCA214}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

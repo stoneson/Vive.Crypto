@@ -139,7 +139,11 @@ namespace Vive.Crypto
         /// <returns></returns>
         public static byte[] Encrypt(byte[] sourceBytes, string publicKey, RSAKeyType keyType = RSAKeyType.Xml)
         {
+#if !NET40
             using (var rsa = RSA.Create())
+#else
+            RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
+#endif
             {
                 if (keyType == RSAKeyType.Xml)
                 {
@@ -153,8 +157,12 @@ namespace Vive.Crypto
                 {
                     rsa.FromJsonString(publicKey);
                 }
-
+#if !NET40
                 return rsa.Encrypt(sourceBytes, RSAEncryptionPadding.Pkcs1);
+#else
+                return rsa.Encrypt(sourceBytes, false);
+# endif
+
             }
         }
 
@@ -188,7 +196,11 @@ namespace Vive.Crypto
         /// <returns></returns>
         public static byte[] Decrypt(byte[] sourceBytes, string privateKey, RSAKeyType keyType = RSAKeyType.Xml)
         {
+#if !NET40
             using (var rsa = RSA.Create())
+#else
+            RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
+#endif
             {
                 if (keyType == RSAKeyType.Xml)
                 {
@@ -202,8 +214,11 @@ namespace Vive.Crypto
                 {
                     rsa.FromJsonString(privateKey);
                 }
-
+#if !NET40
                 return rsa.Decrypt(sourceBytes, RSAEncryptionPadding.Pkcs1);
+#else
+                return rsa.Decrypt(sourceBytes, false);
+#endif
             }
         }
 
@@ -246,7 +261,11 @@ namespace Vive.Crypto
         public static byte[] SignData(byte[] source, string privateKey, RSAType rsaType = RSAType.RSA,
             RSAKeyType keyType = RSAKeyType.Xml)
         {
+#if !NET40
             using (var rsa = RSA.Create())
+#else
+            RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
+#endif
             {
                 if (keyType == RSAKeyType.Xml)
                 {
@@ -260,9 +279,16 @@ namespace Vive.Crypto
                 {
                     rsa.FromJsonString(privateKey);
                 }
-
+#if !NET40
                 return rsa.SignData(source, rsaType == RSAType.RSA ? HashAlgorithmName.SHA1 : HashAlgorithmName.SHA256,
                     RSASignaturePadding.Pkcs1);
+#else
+                object halg = new SHA1CryptoServiceProvider();
+                if (rsaType != RSAType.RSA)
+                    halg = new SHA256CryptoServiceProvider();
+                return rsa.SignData(source, halg);
+#endif
+
             }
         }
 
@@ -303,7 +329,11 @@ namespace Vive.Crypto
         public static bool VerifyData(byte[] source, byte[] signData, string publicKey, RSAType rsaType = RSAType.RSA,
             RSAKeyType keyType = RSAKeyType.Xml)
         {
+#if !NET40
             using (var rsa = RSA.Create())
+#else
+            RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
+#endif
             {
                 if (keyType == RSAKeyType.Xml)
                 {
@@ -317,16 +347,23 @@ namespace Vive.Crypto
                 {
                     rsa.FromJsonString(publicKey);
                 }
-
-                return rsa.VerifyData(source, signData,
+#if !NET40
+              return rsa.VerifyData(source, signData,
                     rsaType == RSAType.RSA ? HashAlgorithmName.SHA1 : HashAlgorithmName.SHA256,
                     RSASignaturePadding.Pkcs1);
+#else
+                object halg = new SHA1CryptoServiceProvider();
+                if (rsaType != RSAType.RSA)
+                    halg = new SHA256CryptoServiceProvider();
+                return rsa.VerifyData(source, halg, signData);
+#endif
+
             }
         }
     }
-    #endregion
+#endregion
 
-    #region RSAEncryption
+#region RSAEncryption
     /// <summary>
     /// RSA 加密提供程序
     /// </summary>
@@ -413,8 +450,8 @@ namespace Vive.Crypto
             return RSAEncryptionProvider.VerifyData(source, signData, publicKey, Encoding, OutType, RSAType.RSA, KeyType);
         }
     }
-    #endregion
-    #region RSA2Encryption
+#endregion
+#region RSA2Encryption
     /// <summary>
     /// RSA256 加密提供程序
     /// </summary>
@@ -456,5 +493,5 @@ namespace Vive.Crypto
             return RSAEncryptionProvider.VerifyData(source, signData, publicKey, Encoding, OutType, RSAType.RSA2, KeyType);
         }
     }
-    #endregion
+#endregion
 }

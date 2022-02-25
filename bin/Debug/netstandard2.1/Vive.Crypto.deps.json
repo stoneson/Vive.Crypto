@@ -1,0 +1,58 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.1/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.1": {},
+    ".NETStandard,Version=v2.1/": {
+      "Vive.Crypto/1.2.4": {
+        "dependencies": {
+          "BouncyCastle.NetCoreSdk": "1.9.3.1",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "Vive.Crypto.dll": {}
+        }
+      },
+      "BouncyCastle.NetCoreSdk/1.9.3.1": {
+        "runtime": {
+          "lib/netstandard2.1/BouncyCastle.Crypto.dll": {
+            "assemblyVersion": "1.9.3.1",
+            "fileVersion": "1.9.3.1"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Vive.Crypto/1.2.4": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BouncyCastle.NetCoreSdk/1.9.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hrHfB3bDeCAJT+VZExMJnEqkoGL1j6JMwp8xm4LB+oCtpGEOjqiipblx8mxfw4zIfgMSJh+hIg2PbiVeMcCm/w==",
+      "path": "bouncycastle.netcoresdk/1.9.3.1",
+      "hashPath": "bouncycastle.netcoresdk.1.9.3.1.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    }
+  }
+}

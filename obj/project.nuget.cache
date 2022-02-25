@@ -1,13 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "TsF8eU+Pc5cnJGKZJJynMop+5wt3leY7enOVrWxYRL9i5LOuiqOaYmFkb+BZretN5uNpcLDB7d28zyRUn1SosQ==",
+  "dgSpecHash": "iBD25rz+NJ/IChSIciyKH+pS0VtdFd25Mzt3tUkRIXjH6JiSSUUj3yzj5aLoFCwY2UIs5pTrkuQI9tPjEWC/jA==",
   "success": true,
-  "projectFilePath": "D:\\github\\Vive.Crypto\\Vive.Crypto.csproj",
+  "projectFilePath": "D:\\github\\gitee\\DotNetty\\Vive.Crypto\\Vive.Crypto.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Stoneson\\.nuget\\packages\\bouncycastle.netcoresdk\\1.9.3.1\\bouncycastle.netcoresdk.1.9.3.1.nupkg.sha512",
-    "C:\\Users\\Stoneson\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Stoneson\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\bouncycastle.netcoresdk\\1.9.3.1\\bouncycastle.netcoresdk.1.9.3.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

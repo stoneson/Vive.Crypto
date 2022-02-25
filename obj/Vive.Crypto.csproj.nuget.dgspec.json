@@ -1,37 +1,58 @@
 {
   "format": 1,
   "restore": {
-    "D:\\github\\Vive.Crypto\\Vive.Crypto.csproj": {}
+    "D:\\github\\gitee\\DotNetty\\Vive.Crypto\\Vive.Crypto.csproj": {}
   },
   "projects": {
-    "D:\\github\\Vive.Crypto\\Vive.Crypto.csproj": {
-      "version": "1.1.3",
+    "D:\\github\\gitee\\DotNetty\\Vive.Crypto\\Vive.Crypto.csproj": {
+      "version": "1.2.4",
       "restore": {
-        "projectUniqueName": "D:\\github\\Vive.Crypto\\Vive.Crypto.csproj",
+        "projectUniqueName": "D:\\github\\gitee\\DotNetty\\Vive.Crypto\\Vive.Crypto.csproj",
         "projectName": "Vive.Crypto",
-        "projectPath": "D:\\github\\Vive.Crypto\\Vive.Crypto.csproj",
-        "packagesPath": "C:\\Users\\Stoneson\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\Vive.Crypto\\obj\\",
+        "projectPath": "D:\\github\\gitee\\DotNetty\\Vive.Crypto\\Vive.Crypto.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\gitee\\DotNetty\\Vive.Crypto\\obj\\",
         "projectStyle": "PackageReference",
+        "crossTargeting": true,
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Stoneson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "net40",
+          "net461",
+          "net5.0",
+          "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "D:\\HisPro\\HCenter\\01框架\\源码\\packages": {},
-          "e:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          },
+          "net40": {
+            "targetAlias": "net40",
+            "projectReferences": {}
+          },
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {}
+          },
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -42,21 +63,16 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "BouncyCastle.NetCoreSdk": {
               "target": "Package",
               "version": "[1.9.3.1, )"
             },
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
-            },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[12.0.3, )"
+              "version": "[13.0.1, )"
             }
           },
           "imports": [
@@ -69,7 +85,69 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        },
+        "net40": {
+          "targetAlias": "net40",
+          "dependencies": {
+            "BouncyCastle.NetCoreSdk": {
+              "target": "Package",
+              "version": "[1.9.3.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "BouncyCastle.NetCoreSdk": {
+              "target": "Package",
+              "version": "[1.9.3.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "BouncyCastle.NetCoreSdk": {
+              "target": "Package",
+              "version": "[1.9.3.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

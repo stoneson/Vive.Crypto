@@ -22,6 +22,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyProductAttribute("Vive.Crypto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vive.Crypto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.1.3.0")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/stoneson/Vive.Crypto")]
 
 // 由 MSBuild WriteCodeFragment 类生成。
 

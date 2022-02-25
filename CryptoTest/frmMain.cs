@@ -56,6 +56,7 @@ namespace CryptoTest
                                         "DES",
                                         "TripleDES128",
                                         "TripleDES192",
+                                        "Base64",
                 });
 
                 btnDecrypt.Enabled = true;
@@ -115,14 +116,15 @@ namespace CryptoTest
             btnGenerateKeyPair.Visible = true;
             if (cmbProviderType.Text == "对称加密")
             {
-                txtprivateKey.Enabled = !(cmbEncryptType.Text.StartsWith("SM4") && cmbEncryptType.Text.Contains("ECB"));
+                txtprivateKey.Enabled = !(cmbEncryptType.Text == "Base64" || (cmbEncryptType.Text.StartsWith("SM4") && cmbEncryptType.Text.Contains("ECB")));
+                txtSecretKey.Enabled = cmbEncryptType.Text != "Base64";
             }
             else if (cmbProviderType.Text == "哈希加密")
             {
                 txtSecretKey.Enabled = cmbEncryptType.Text.StartsWith("HMAC");
                 txtprivateKey.Enabled = false;
-                btnGenerateKeyPair.Visible = txtSecretKey.Enabled;
             }
+            btnGenerateKeyPair.Visible = txtSecretKey.Enabled;
             refreshData();
         }
         /// <summary>
@@ -132,6 +134,8 @@ namespace CryptoTest
         /// <param name="e"></param>
         private void btnEncrypt_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtPost.Text))
+                return;
             btnEncrypt.Enabled = false;
             txtResponse.Text = "";
             try
@@ -150,6 +154,8 @@ namespace CryptoTest
         /// <param name="e"></param>
         private void btnDecrypt_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtPost.Text))
+                return;
             btnDecrypt.Enabled = false;
             txtResponse.Text = "";
             try
@@ -166,7 +172,11 @@ namespace CryptoTest
             var response = "";
             try
             {
-                if (cmbProviderType.Text == "对称加密")
+                if (cmbEncryptType.Text == "Base64")
+                {
+                    response = Base64ConvertProvider.Encode(plainText);
+                }
+                else if (cmbProviderType.Text == "对称加密")
                 {
                     var symmetricProviderType = cmbEncryptType.Text.Split('-')[0];
                     var symmetricProvider = CryptoFactory.CreateSymmetric(symmetricProviderType);
@@ -188,7 +198,9 @@ namespace CryptoTest
             var response = "";
             try
             {
-                if (cmbProviderType.Text == "对称加密")
+                if (cmbEncryptType.Text == "Base64")
+                { response = Base64ConvertProvider.Decode(cipherText); }
+                else if (cmbProviderType.Text == "对称加密")
                 {
                     var symmetricProviderType = cmbEncryptType.Text.Split('-')[0];
                     var symmetricProvider = CryptoFactory.CreateSymmetric(symmetricProviderType);

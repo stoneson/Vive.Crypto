@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>CryptoTest5._0</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\CryptoTest\frmMain.cs" Link="frmMain.cs" />
+    <Compile Include="..\CryptoTest\frmMain.Designer.cs" Link="frmMain.Designer.cs" />
+    <Compile Include="..\CryptoTest\INIHelper.cs" Link="INIHelper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\CryptoTest\frmMain.resx" Link="frmMain.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HCenter.CommonUtils" Version="2.0.6" />
+    <PackageReference Include="Vive.Crypto" Version="1.2.3" />
+  </ItemGroup>
+
+</Project>

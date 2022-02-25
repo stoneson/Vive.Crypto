@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Vive.Crypto</id>
+    <version>1.2.3</version>
+    <title>Vive.Crypto</title>
+    <authors>Vive</authors>
+    <projectUrl>https://github.com/stoneson/Vive.Crypto</projectUrl>
+    <description>Vive.Crypto实现了C#、Java 和 JS 的SM3,SM4的相互加密解密;以及对各种常用的加密算法进行封装，有 Base64、对称加密（DES、3DES、AES、SM4）、非对称加密（RSA、SM2）、Hash(MD4、MD5、HMAC、HMAC-MD5、HMAC-SHA1、HMAC-SHA256、HMAC-SHA384、HMAC-SHA512、SHA、SHA1、SHA256、SHA384、SHA512、SM3)等实现。</description>
+    <releaseNotes>Vive.Crypto以MIT开源发布，可随意使用</releaseNotes>
+    <copyright>Vive</copyright>
+    <tags>Vive applicationframework dotnetcore aspnetcore DES 3DES AES SM4 RSA SM2 MD4 MD5 HMAC HMAC-MD5 HMAC-SHA1 HMAC-SHA256 HMAC-SHA384 HMAC-SHA512 SHA SHA1 SHA256 SHA384 SHA512 SM3</tags>
+    <repository type="git" url="https://github.com/stoneson/Vive.Crypto" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.0">
+        <dependency id="BouncyCastle.NetCoreSdk" version="1.9.3.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="BouncyCastle.NetCoreSdk" version="1.9.3.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net5.0">
+        <dependency id="BouncyCastle.NetCoreSdk" version="1.9.3.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="BouncyCastle.NetCoreSdk" version="1.9.3.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\github\Vive.Crypto\bin\Debug\net40\Vive.Crypto.dll" target="lib\net40\Vive.Crypto.dll" />
+    <file src="D:\github\Vive.Crypto\bin\Debug\net461\Vive.Crypto.dll" target="lib\net461\Vive.Crypto.dll" />
+    <file src="D:\github\Vive.Crypto\bin\Debug\net5.0\Vive.Crypto.dll" target="lib\net5.0\Vive.Crypto.dll" />
+    <file src="D:\github\Vive.Crypto\bin\Debug\netstandard2.1\Vive.Crypto.dll" target="lib\netstandard2.1\Vive.Crypto.dll" />
+  </files>
+</package>
