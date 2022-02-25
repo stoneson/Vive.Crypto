@@ -60,12 +60,6 @@
       <HintPath>..\packages\RestSharp.106.10.1\lib\net452\RestSharp.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="RestSharp.Serializers.NewtonsoftJson">
-      <HintPath>..\..\packages\RestSharp\net452\RestSharp.Serializers.NewtonsoftJson.dll</HintPath>
-    </Reference>
-    <Reference Include="RestSharp.Serializers.Utf8Json">
-      <HintPath>..\..\packages\RestSharp\net452\RestSharp.Serializers.Utf8Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -92,9 +86,8 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Vive.Crypto, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Vive.Crypto.1.2.3\lib\net461\Vive.Crypto.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Vive.Crypto, Version=1.2.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vive.Crypto.1.2.4\lib\net461\Vive.Crypto.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

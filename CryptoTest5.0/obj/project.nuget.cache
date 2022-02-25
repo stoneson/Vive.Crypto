@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PuX5lJm/PRhwT0BDqu/quEILWdwUzPBLf+r/WqEfnPAy8Q5Xt4i0Mf9TWJWVp6PCu5+Q1noiEz3GnLupyxy1ZA==",
+  "dgSpecHash": "xznePYcpEmtxz5Gw8kI1ptkN6ztQtQrE1I/gpbVwzx/SJ6BwU2eQxY5avXn/NorzD8tnoLNJyjw6gFhTb5br0A==",
   "success": true,
   "projectFilePath": "D:\\github\\gitee\\DotNetty\\Vive.Crypto\\CryptoTest5.0\\CryptoTest5.0.csproj",
   "expectedPackageFiles": [
@@ -97,7 +97,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.xml.readerwriter\\4.0.11\\system.xml.readerwriter.4.0.11.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.xml.xmldocument\\4.0.1\\system.xml.xmldocument.4.0.1.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\vive.crypto\\1.2.3\\vive.crypto.1.2.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\vive.crypto\\1.2.4\\vive.crypto.1.2.4.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
   ],
   "logs": []

@@ -57,8 +57,8 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Vive.Crypto, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Vive.Crypto.1.2.3\lib\net40\Vive.Crypto.dll</HintPath>
+    <Reference Include="Vive.Crypto, Version=1.2.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vive.Crypto.1.2.4\lib\net40\Vive.Crypto.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

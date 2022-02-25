@@ -20,6 +20,7 @@ namespace CryptoTest
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.Text = System.Reflection.Assembly.GetExecutingAssembly().GetName().Name;
             cmbEncryptType.SelectedIndexChanged += new System.EventHandler(this.cmbEncryptType_SelectedIndexChanged);
             cmbProviderType.SelectedIndexChanged += CmbProviderType_SelectedIndexChanged;
             cmbProviderType.SelectedIndex = 0;

@@ -9,7 +9,7 @@
       "CryptoTest5.0/1.0.0": {
         "dependencies": {
           "HCenter.CommonUtils": "2.0.6",
-          "Vive.Crypto": "1.2.3"
+          "Vive.Crypto": "1.2.4"
         },
         "runtime": {
           "CryptoTest5.0.dll": {}
@@ -963,15 +963,15 @@
           "System.Xml.ReaderWriter": "4.0.11"
         }
       },
-      "Vive.Crypto/1.2.3": {
+      "Vive.Crypto/1.2.4": {
         "dependencies": {
           "BouncyCastle.NetCoreSdk": "1.9.3.1",
           "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
           "lib/net5.0/Vive.Crypto.dll": {
-            "assemblyVersion": "1.2.3.0",
-            "fileVersion": "1.2.3.0"
+            "assemblyVersion": "1.2.4.0",
+            "fileVersion": "1.2.4.0"
           }
         }
       }
@@ -1634,12 +1634,12 @@
       "path": "system.xml.xmldocument/4.0.1",
       "hashPath": "system.xml.xmldocument.4.0.1.nupkg.sha512"
     },
-    "Vive.Crypto/1.2.3": {
+    "Vive.Crypto/1.2.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vb9QjeiSDq7hyNfkaNZ4ITvnBI8ZUA+Ily89Rs851lzW2D4oSFP90A37esPOiNOkycVKiBAU6iegdLMagf27dA==",
-      "path": "vive.crypto/1.2.3",
-      "hashPath": "vive.crypto.1.2.3.nupkg.sha512"
+      "sha512": "sha512-eoGh6gGpQasDkYPeFIx278pO6eCTBTwrqMBWPO6dKOO/xQ3G8w4bmC6F7gCtNYLboOVHF194A4JX/TC4cLy7vQ==",
+      "path": "vive.crypto/1.2.4",
+      "hashPath": "vive.crypto.1.2.4.nupkg.sha512"
     }
   }
 }

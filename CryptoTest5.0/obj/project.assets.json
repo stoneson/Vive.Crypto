@@ -1608,7 +1608,7 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
-      "Vive.Crypto/1.2.3": {
+      "Vive.Crypto/1.2.4": {
         "type": "package",
         "dependencies": {
           "BouncyCastle.NetCoreSdk": "1.9.3.1",
@@ -5578,18 +5578,19 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
-    "Vive.Crypto/1.2.3": {
-      "sha512": "vb9QjeiSDq7hyNfkaNZ4ITvnBI8ZUA+Ily89Rs851lzW2D4oSFP90A37esPOiNOkycVKiBAU6iegdLMagf27dA==",
+    "Vive.Crypto/1.2.4": {
+      "sha512": "eoGh6gGpQasDkYPeFIx278pO6eCTBTwrqMBWPO6dKOO/xQ3G8w4bmC6F7gCtNYLboOVHF194A4JX/TC4cLy7vQ==",
       "type": "package",
-      "path": "vive.crypto/1.2.3",
+      "path": "vive.crypto/1.2.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "avatar.png",
         "lib/net40/Vive.Crypto.dll",
         "lib/net461/Vive.Crypto.dll",
         "lib/net5.0/Vive.Crypto.dll",
         "lib/netstandard2.1/Vive.Crypto.dll",
-        "vive.crypto.1.2.3.nupkg.sha512",
+        "vive.crypto.1.2.4.nupkg.sha512",
         "vive.crypto.nuspec"
       ]
     }
@@ -5597,7 +5598,7 @@
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
       "HCenter.CommonUtils >= 2.0.6",
-      "Vive.Crypto >= 1.2.3"
+      "Vive.Crypto >= 1.2.4"
     ]
   },
   "packageFolders": {
@@ -5657,7 +5658,7 @@
           },
           "Vive.Crypto": {
             "target": "Package",
-            "version": "[1.2.3, )"
+            "version": "[1.2.4, )"
           }
         },
         "imports": [
