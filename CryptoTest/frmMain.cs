@@ -340,5 +340,28 @@ namespace CryptoTest
             txtPost.Text = txtResponse.Text;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //创建Document实例
+            var document = new Spire.Doc.Document();
+            //加载HTML文档
+            document.LoadFromFile("printpatientform.htm", Spire.Doc.FileFormat.Html);
+
+            //保存为Word
+            document.SaveToFile("HTMLtoWord.docx", Spire.Doc.FileFormat.Docx);
+            document.Close();
+            return;
+            var thmlBytes = PdfHelper.ConvertToPdf(false, txtPost.Text, "printPdf");
+            //var thmlBytes = PdfHelper.ConvertHtmlTextToPDF(PdfHelper.GetWebContent(txtPost.Text));
+            if (thmlBytes != null)
+            {
+                //var pdfData = PdfHelper.ToBase64Str(thmlBytes);
+
+                var filen = PdfHelper.SaveToFile(thmlBytes, Guid.NewGuid().ToString("N") + ".pdf");//保存pdf文件到本地
+                txtResponse.Text = filen;
+                //filen = "/pdfFiles/" + path.Replace("/", "-").Replace(".", "-") + ".pdf";
+                //Response.Write("<script language='javascript'>var viewPath = '" + pdfData + "';</script>");
+            }
+        }
     }
 }

@@ -5609,11 +5609,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\github\\gitee\\DotNetty\\Vive.Crypto\\CryptoTest5.0\\CryptoTest5.0.csproj",
+      "projectUniqueName": "D:\\github\\gitee\\vive\\Vive.Crypto\\CryptoTest5.0\\CryptoTest5.0.csproj",
       "projectName": "CryptoTest5.0",
-      "projectPath": "D:\\github\\gitee\\DotNetty\\Vive.Crypto\\CryptoTest5.0\\CryptoTest5.0.csproj",
+      "projectPath": "D:\\github\\gitee\\vive\\Vive.Crypto\\CryptoTest5.0\\CryptoTest5.0.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\github\\gitee\\DotNetty\\Vive.Crypto\\CryptoTest5.0\\obj\\",
+      "outputPath": "D:\\github\\gitee\\vive\\Vive.Crypto\\CryptoTest5.0\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
@@ -5671,12 +5671,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.13, 5.0.13]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -5685,7 +5679,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

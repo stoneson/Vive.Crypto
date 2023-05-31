@@ -156,11 +156,11 @@
   "project": {
     "version": "1.2.4",
     "restore": {
-      "projectUniqueName": "D:\\github\\gitee\\DotNetty\\Vive.Crypto\\Vive.Crypto.csproj",
+      "projectUniqueName": "D:\\github\\gitee\\vive\\Vive.Crypto\\Vive.Crypto.csproj",
       "projectName": "Vive.Crypto",
-      "projectPath": "D:\\github\\gitee\\DotNetty\\Vive.Crypto\\Vive.Crypto.csproj",
+      "projectPath": "D:\\github\\gitee\\vive\\Vive.Crypto\\Vive.Crypto.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\github\\gitee\\DotNetty\\Vive.Crypto\\obj\\",
+      "outputPath": "D:\\github\\gitee\\vive\\Vive.Crypto\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -239,7 +239,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       },
       "net40": {
         "targetAlias": "net40",
@@ -253,7 +253,7 @@
             "version": "[13.0.1, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       },
       "net461": {
         "targetAlias": "net461",
@@ -267,7 +267,7 @@
             "version": "[13.0.1, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       },
       "netstandard2.1": {
         "targetAlias": "netstandard2.1",
@@ -296,7 +296,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
